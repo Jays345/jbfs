@@ -5,7 +5,7 @@ const navLinks = document.getElementById('navLinks');
 
 if (!toggle || !navLinks) return;
 
-// Detect the current page
+
 const currentFile = (
     window.location.pathname.split('/').pop() || 'index.html'
 ).toLowerCase();
@@ -28,7 +28,7 @@ navLinks.querySelectorAll('a').forEach(link => {
     }
 });
 
-// Mobile menu toggle
+
 toggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
 
@@ -39,7 +39,7 @@ toggle.addEventListener('click', () => {
     );
 });
 
-// Close the mobile menu after selecting a link
+
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -48,7 +48,7 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-// Reset the mobile menu when resizing to desktop
+
 window.addEventListener('resize', () => {
     if (window.innerWidth > 900) {
         navLinks.classList.remove('open');
