@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // =========================================
-    // MOBILE NAVIGATION
-    // =========================================
 
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
@@ -68,9 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // =========================================
-    // HERO BACKGROUND SLIDESHOW
-    // =========================================
 
     const slides = Array.from(
         document.querySelectorAll(".hero-slide")
@@ -138,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         stopSlideshow();
 
-        // Respect the visitor's reduced-motion preference.
+     
         if (reducedMotion.matches || slides.length < 2) {
             return;
         }
@@ -152,14 +146,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Click indicators to select a photograph
     dots.forEach((dot, index) => {
 
         dot.addEventListener("click", () => {
 
             showSlide(index);
 
-            // Restart the timer after manual navigation
+            
             startSlideshow();
 
         });
@@ -187,7 +180,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Respond to changes in motion preferences
     if (reducedMotion.addEventListener) {
 
         reducedMotion.addEventListener("change", () => {
@@ -207,7 +199,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Start with the first slide
     if (slides.length > 0) {
 
         showSlide(0);
@@ -216,9 +207,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // =========================================
-    // DYNAMIC COPYRIGHT YEAR
-    // =========================================
 
     const currentYear = document.getElementById("currentYear");
 
