@@ -1,0 +1,128 @@
+/* Joyce Banda Foundation Schools — Academics page */
+:root {
+    --green: #064b3b; --green-dark: #03372c; --green-light: #17634e;
+    --gold: #c69a35; --gold-light: #e3c77f; --cream: #faf7ee;
+    --mint: #e8f2eb; --white: #fff; --text: #34473e; --muted: #69786f;
+    --border: #dce8df; --shadow: 0 12px 32px rgba(3,55,44,.08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; color: var(--text); background: var(--white); font-family: Arial, Helvetica, sans-serif; line-height: 1.65; }
+a { color: inherit; }
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+h1,h2,h3 { color: var(--green); font-family: Georgia,'Times New Roman',serif; line-height: 1.17; margin-top: 0; }
+h2 { font-size: clamp(1.8rem,3vw,2.55rem); margin-bottom: 14px; }
+p { margin-top: 0; }
+.academics-hero { min-height: 430px; position: relative; display: flex; align-items: center; overflow: hidden; color: white; background: var(--green-dark) url('images/computers.jpg') center 42%/cover no-repeat; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg,rgba(3,55,44,.97) 0%,rgba(3,55,44,.85) 45%,rgba(3,55,44,.18) 100%); }
+.hero-content { position: relative; z-index: 1; max-width: 800px; padding: 65px 7%; }
+.eyebrow { color: var(--gold); font-size: .75rem; font-weight: 800; letter-spacing: .16em; margin-bottom: 10px; }
+.hero-content h1 { color: white; font-size: clamp(2.5rem,5vw,4.1rem); margin-bottom: 18px; }
+.hero-content h1 span { color: var(--gold-light); }
+.hero-content > p:not(.eyebrow) { max-width: 650px; color: #f1f6f1; margin-bottom: 25px; font-size: 1.02rem; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: .9rem; transition: transform .2s,background .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-gold { background: var(--gold-light); color: var(--green-dark); }
+.button-green { background: var(--green); color: white; }
+.button-green:hover { background: var(--green-light); }
+.button-light-outline { color: white; border: 1px solid rgba(255,255,255,.8); }
+.section-wrap { max-width: 1350px; margin: auto; padding: 68px 5%; }
+.intro-section { display: grid; grid-template-columns: .95fr 1.05fr; gap: 55px; align-items: center; }
+.intro-image { height: 350px; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow); }
+.intro-copy p:not(.eyebrow) { color: var(--muted); }
+.text-link { display: inline-block; color: var(--green); font-size: .9rem; font-weight: 700; text-decoration: none; margin-top: 5px; }
+.text-link:hover { color: #98701b; }
+.pathways-section,.programmes-section { padding: 70px 5%; background: var(--cream); }
+.section-heading { text-align: center; max-width: 800px; margin: 0 auto 38px; }
+.section-heading h2 { margin-bottom: 12px; }
+.section-heading > p:last-child { color: var(--muted); }
+.pathway-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 23px; max-width: 1250px; margin: auto; }
+.pathway-card { position: relative; padding: 30px 27px; background: white; border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 8px 24px rgba(3,55,44,.045); }
+.featured-card { border-top: 4px solid var(--gold); }
+.card-top { display: flex; justify-content: space-between; align-items: center; }
+.pathway-icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: var(--mint); color: var(--gold); font-size: 1.8rem; }
+.stage-label { color: var(--gold); font-size: .7rem; font-weight: 800; letter-spacing: .12em; }
+.pathway-card h3 { font-size: 1.45rem; margin: 21px 0 11px; }
+.pathway-card p,.pathway-card li { color: var(--muted); font-size: .9rem; }
+.pathway-card ul { padding-left: 20px; margin-bottom: 0; }
+.pathway-card li { margin: 7px 0; }
+.section-disclaimer { max-width: 1250px; margin: 24px auto 0; color: var(--muted); font-size: .8rem; }
+.learning-experience { display: grid; grid-template-columns: 1fr .9fr; gap: 55px; align-items: center; }
+.learning-copy > p:not(.eyebrow) { color: var(--muted); }
+.benefit-list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 25px; }
+.benefit-list article { display: flex; gap: 11px; align-items: flex-start; }
+.benefit-list article > span { flex: 0 0 27px; height: 27px; display: grid; place-items: center; border-radius: 50%; background: var(--mint); color: var(--green); font-weight: 800; }
+.benefit-list h3 { font: 700 1rem Arial,sans-serif; margin: 2px 0 5px; }
+.benefit-list p { color: var(--muted); font-size: .84rem; margin-bottom: 0; }
+.learning-image { height: 400px; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow); }
+.programme-grid { max-width: 1150px; margin: auto; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; }
+.programme-card { display: flex; gap: 17px; padding: 26px; background: white; border: 1px solid var(--border); border-radius: 10px; }
+.programme-mark { flex: 0 0 45px; height: 45px; display: grid; place-items: center; border-radius: 50%; background: var(--green); color: var(--gold-light); font: bold 1.2rem Georgia,serif; }
+.programme-card h3 { font-size: 1.15rem; margin: 5px 0 8px; }
+.programme-card p { font-size: .87rem; color: var(--muted); margin-bottom: 0; }
+.family-section { display: grid; grid-template-columns: .95fr 1.05fr; gap: 55px; align-items: center; }
+.family-image { height: 330px; border-radius: 8px; overflow: hidden; }
+.family-copy p:not(.eyebrow) { color: var(--muted); }
+.family-copy .button { margin-top: 8px; }
+.academics-cta { background: var(--green-dark); color: white; text-align: center; padding: 65px 6%; }
+.cta-content { max-width: 800px; margin: auto; }
+.academics-cta h2 { color: white; font-size: clamp(2rem,4vw,2.8rem); }
+.academics-cta .eyebrow { color: var(--gold-light); }
+.academics-cta p:not(.eyebrow) { color: #e2eee6; max-width: 680px; margin: 0 auto 24px; }
+.cta-actions { display: flex; flex-wrap: wrap; gap: 13px; justify-content: center; }
+.quick-info { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.quick-info article { display: flex; gap: 15px; padding: 22px; border: 1px solid var(--border); border-radius: 10px; }
+.quick-info article > span { color: var(--gold); font-size: 1.8rem; }
+.quick-info h3 { margin-bottom: 7px; font-size: 1.1rem; }
+.quick-info p { color: var(--muted); font-size: .88rem; margin-bottom: 0; overflow-wrap: anywhere; }
+.quick-info a { color: var(--green); text-decoration: none; }
+.quick-info a:hover { text-decoration: underline; }
+.site-footer { background: var(--green-dark); color: #edf5ef; padding: 40px 5% 15px; }
+.footer-main { max-width: 1300px; margin: auto; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 50px; padding-bottom: 28px; }
+.footer-school-brand { color: white; }
+.footer-school-brand .brand-symbol { border-color: var(--gold-light); }
+.footer-school-brand .brand-symbol svg { stroke: white; }
+.footer-brand > p { max-width: 260px; font-size: .85rem; margin-top: 17px; }
+.footer-main h2 { color: white; font: 700 1rem Arial,sans-serif; margin-bottom: 14px; }
+.footer-links { display: grid; grid-template-columns: 1fr 1fr; align-content: start; column-gap: 18px; }
+.footer-links h2 { grid-column: 1/-1; }
+.footer-links a,.footer-contact p { color: #e2eee6; font-size: .83rem; text-decoration: none; margin: 0 0 7px; }
+.footer-links a:hover { color: var(--gold-light); }
+.footer-contact p { margin-bottom: 9px; }
+.footer-contact a { color: inherit; }
+.footer-bottom { max-width: 1300px; margin: auto; padding-top: 15px; border-top: 1px solid rgba(227,199,127,.6); display: flex; justify-content: space-between; gap: 20px; font-size: .76rem; }
+.footer-bottom p { margin: 0; }
+.footer-bottom span { color: var(--gold-light); font-style: italic; }
+@media (max-width: 1100px) {
+    .navigation-container { gap: 15px; } .nav-links { gap: 10px; } .nav-links a { font-size: .75rem; }
+    .intro-section,.learning-experience,.family-section { gap: 32px; }
+    .pathway-grid,.programme-grid { grid-template-columns: 1fr 1fr; }
+    .pathway-card:last-child,.programme-card:last-child { grid-column: 1/-1; }
+}
+@media (max-width: 850px) {
+    .navigation-container { min-height: 72px; }
+    .menu-toggle { display: block; }
+    .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 15px 6% 22px; background: white; box-shadow: 0 12px 18px rgba(0,0,0,.08); flex-direction: column; align-items: stretch; gap: 0; }
+    .nav-links.open { display: flex; }
+    .nav-links a { padding: 11px 0; font-size: .95rem; border-bottom: 1px solid #edf0e9; }
+    .intro-section,.learning-experience,.family-section { grid-template-columns: 1fr; }
+    .intro-image,.family-image { height: 300px; }
+    .learning-image { height: 330px; }
+    .quick-info { grid-template-columns: 1fr; }
+    .footer-main { gap: 28px; }
+}
+@media (max-width: 580px) {
+    .brand-symbol { width: 39px; height: 39px; } .brand-symbol svg { width: 32px; height: 32px; }
+    .brand-text strong { font-size: 1rem; } .brand-text small { font-size: .48rem; }
+    .academics-hero { min-height: 450px; }
+    .hero-content { padding: 55px 6%; }
+    .hero-overlay { background: linear-gradient(90deg,rgba(3,55,44,.96),rgba(3,55,44,.72)); }
+    .section-wrap { padding: 48px 6%; }
+    .pathways-section,.programmes-section { padding: 48px 6%; }
+    .pathway-grid,.programme-grid,.benefit-list { grid-template-columns: 1fr; }
+    .pathway-card:last-child,.programme-card:last-child { grid-column: auto; }
+    .learning-image { height: 250px; }
+    .academics-cta { padding: 52px 6%; }
+    .footer-main { grid-template-columns: 1fr; gap: 30px; }
+    .footer-bottom { flex-direction: column; gap: 7px; }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News, announcements, and events from Joyce Banda Foundation Schools in Blantyre, Malawi.">
+  <title>News &amp; Events | Joyce Banda Foundation Schools</title>
+  <link rel="stylesheet" href="news.css">
+  <script src="news.js" defer></script>
+  <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+ <!-- ================= NAVIGATION ================= -->
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <div class="navigation-container">
+
+                <a href="index.html" class="school-brand"
+                   aria-label="Joyce Banda Foundation Schools home">
+
+                    <span class="brand-symbol" aria-hidden="true">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 43V19" stroke="currentColor"
+                                  stroke-width="2.5"/>
+                            <path d="M24 19C14 19 9 12 9 5C19 5 24 11 24 19Z"
+                                  fill="#C69A35"/>
+                            <path d="M24 25C34 25 39 18 39 11C29 11 24 17 24 25Z"
+                                  fill="#C69A35"/>
+                            <path d="M5 21L24 29L43 21V40L24 47L5 40V21Z"
+                                  fill="#064B3B"/>
+                            <path d="M24 29V45" stroke="#FAF8F1"
+                                  stroke-width="1.5"/>
+                            <path d="M9 25L22 31V41L9 36V25Z"
+                                  fill="#FFFFFF"/>
+                            <path d="M39 25L26 31V41L39 36V25Z"
+                                  fill="#E4F0E7"/>
+                        </svg>
+                    </span>
+
+                    <span class="brand-text">
+                        <strong>JOYCE BANDA</strong>
+                        <small>FOUNDATION SCHOOLS</small>
+                    </span>
+
+                </a>
+
+
+                <button class="menu-toggle"
+                        id="menuToggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="navLinks">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+                <div class="nav-links" id="navLinks">
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="student-life.html">Student Life</a>
+                    <a href="news.html">News &amp; Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">FROM OUR SCHOOL COMMUNITY</p>
+      <h1>Stories, news<br>&amp; <span>what's next.</span></h1>
+      <p>Explore school highlights, celebrate learner achievements, and keep up with activities across the Joyce Banda Foundation Schools community.</p>
+      <a class="button button-gold" href="#latest-news">Explore updates <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="art-circle circle-one"></div><div class="art-circle circle-two"></div>
+      <div class="story-card">
+        <div class="story-card-top"><span>JB</span><span>COMMUNITY UPDATE</span></div>
+        <div class="story-lines"><i></i><i></i><i></i></div>
+        <div class="story-highlight"><span>✦</span><div><strong>Every day is a chance to grow.</strong><small>Learning • Discovery • Community</small></div></div>
+      </div>
+      <span class="floating-dot dot-one"></span><span class="floating-dot dot-two"></span>
+    </div>
+  </section>
+
+  <section class="notice section-wrap">
+    <span class="notice-icon">!</span>
+    <div><strong>Editorial note</strong><p>The stories and event cards below are sample website content to demonstrate the layout. They are not confirmed news reports or scheduled events. Replace them with school-approved updates before publishing.</p></div>
+  </section>
+
+  <section class="news-section section-wrap" id="latest-news">
+    <div class="section-heading">
+      <div><p class="eyebrow">LATEST UPDATES</p><h2>From our <span>community.</span></h2></div>
+      <p>Use the filters to browse sample stories by topic.</p>
+    </div>
+    <div class="news-tools">
+      <div class="filter-tabs" role="group" aria-label="Filter news by category">
+        <button class="filter-tab active" data-filter="all" aria-pressed="true">All updates</button>
+        <button class="filter-tab" data-filter="learning" aria-pressed="false">Learning</button>
+        <button class="filter-tab" data-filter="student-life" aria-pressed="false">Student life</button>
+        <button class="filter-tab" data-filter="community" aria-pressed="false">Community</button>
+      </div>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="newsSearch" placeholder="Search updates..." aria-label="Search updates"></label>
+    </div>
+
+    <div class="featured-grid">
+      <article class="featured-story news-card" data-category="student-life" data-search="student life culture activities learners school community sample">
+        <div class="featured-image image-culture" role="img" aria-label="Decorative cultural event illustration"><span class="image-label">STUDENT LIFE</span><span class="image-art">✦</span></div>
+        <div class="story-content"><p class="story-meta"><span>FEATURED STORY</span><span>• SAMPLE</span></p><h3>Celebrating talent, culture, and togetherness</h3><p>A sample story about how school activities can give learners opportunities to share their talents, appreciate one another, and build confidence.</p><button class="text-link read-story" data-story="culture">Read story <span>→</span></button></div>
+      </article>
+      <article class="featured-story news-card" data-category="learning" data-search="learning computers technology digital skills classroom education sample">
+        <div class="featured-image image-learning" role="img" aria-label="Decorative learning and technology illustration"><span class="image-label">LEARNING</span><span class="image-art">⌘</span></div>
+        <div class="story-content"><p class="story-meta"><span>LEARNING HIGHLIGHT</span><span>• SAMPLE</span></p><h3>Building skills for a changing world</h3><p>A sample feature on curiosity, digital confidence, and the value of helping learners develop skills for their future.</p><button class="text-link read-story" data-story="learning">Read story <span>→</span></button></div>
+      </article>
+    </div>
+
+    <div class="section-subheading"><h3>More updates</h3><span id="resultsCount" aria-live="polite">4 stories</span></div>
+    <div class="news-grid" id="newsGrid">
+      <article class="news-card compact-card" data-category="community" data-search="community family partnership school families guardians sample">
+        <div class="compact-art art-community"><span>♡</span><small>COMMUNITY</small></div><div class="compact-content"><p class="story-meta">COMMUNITY · SAMPLE</p><h3>Working together with families</h3><p>A sample reminder about the important partnership between families and school staff.</p><button class="text-link read-story" data-story="families">Read story <span>→</span></button></div>
+      </article>
+      <article class="news-card compact-card" data-category="learning" data-search="academic learning progress reading practice assessment sample">
+        <div class="compact-art art-learning"><span>✎</span><small>LEARNING</small></div><div class="compact-content"><p class="story-meta">LEARNING · SAMPLE</p><h3>Small steps, steady progress</h3><p>A sample feature encouraging regular practice, questions, and celebrating learning milestones.</p><button class="text-link read-story" data-story="progress">Read story <span>→</span></button></div>
+      </article>
+      <article class="news-card compact-card" data-category="student-life" data-search="educational trip excursion discovery student life sample">
+        <div class="compact-art art-trips"><span>↗</span><small>STUDENT LIFE</small></div><div class="compact-content"><p class="story-meta">STUDENT LIFE · SAMPLE</p><h3>Learning beyond the classroom</h3><p>A sample story about educational visits and the discoveries that can come from new experiences.</p><button class="text-link read-story" data-story="trips">Read story <span>→</span></button></div>
+      </article>
+      <article class="news-card compact-card" data-category="community" data-search="school event calendar announcements date confirmation community sample">
+        <div class="compact-art art-events"><span>▦</span><small>EVENTS</small></div><div class="compact-content"><p class="story-meta">EVENTS · SAMPLE</p><h3>Keep an eye on school notices</h3><p>Check official school communications for confirmed event dates, arrangements, and reminders.</p><a class="text-link" href="calendar.html">View calendar <span>→</span></a></div>
+      </article>
+    </div>
+    <div class="no-results" id="noResults" hidden>No updates match your search. Try another keyword or select a different category.</div>
+  </section>
+
+  <section class="events-section">
+    <div class="section-wrap">
+      <div class="section-heading light-heading">
+        <div><p class="eyebrow">LOOKING AHEAD</p><h2>Events &amp; <span>announcements.</span></h2></div>
+        <p>Sample event cards for demonstrating how upcoming activities can be displayed.</p>
+      </div>
+      <div class="event-cards">
+        <article class="event-card"><div class="event-date"><span>DATE</span><strong>—</strong><small>To be confirmed</small></div><div class="event-info"><span class="event-tag">ACADEMIC</span><h3>Academic calendar updates</h3><p>Official term dates, assessments, and school schedules will be shared here once confirmed.</p></div><span class="event-arrow">↗</span></article>
+        <article class="event-card"><div class="event-date gold-date"><span>DATE</span><strong>—</strong><small>To be confirmed</small></div><div class="event-info"><span class="event-tag">FAMILY</span><h3>Parent and guardian meetings</h3><p>Meeting dates and details should be confirmed through official school communication.</p></div><span class="event-arrow">↗</span></article>
+        <article class="event-card"><div class="event-date purple-date"><span>DATE</span><strong>—</strong><small>To be confirmed</small></div><div class="event-info"><span class="event-tag">SCHOOL LIFE</span><h3>School activities and celebrations</h3><p>Look here for approved announcements about trips, cultural activities, and celebrations.</p></div><span class="event-arrow">↗</span></article>
+      </div>
+      <p class="events-footnote">No event dates are published here because the official schedule has not been provided.</p>
+      <a class="button button-light" href="calendar.html">Open school calendar <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="subscribe-section section-wrap">
+    <div class="subscribe-icon">✉</div><div class="subscribe-copy"><p class="eyebrow">STAY CONNECTED</p><h2>Have a school update to share?</h2><p>Contact the school office to ask about announcements, submit information for consideration, or confirm an event.</p></div><a class="button button-green" href="contact.html">Contact the school <span aria-hidden="true">→</span></a>
+  </section>
+</main>
+
+<div class="modal" id="storyModal" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+  <section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" aria-label="Close story" data-close-modal>×</button>
+    <p class="eyebrow">SAMPLE STORY</p><h2 id="modalTitle">Story title</h2><p id="modalBody"></p>
+    <p class="modal-note">This is illustrative sample copy. Replace it with a school-approved story before publishing.</p>
+    <a class="button button-green" href="contact.html">Contact the school <span aria-hidden="true">→</span></a>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">JB</span><span class="brand-copy"><strong>JOYCE BANDA</strong><small>FOUNDATION SCHOOLS</small></span></a>
+    <p>Supporting learners as they learn, grow, and prepare for the future.</p>
+    <div class="footer-contact"><a href="tel:+265993876439">+265 993 876 439</a><a href="mailto:info@jbfschools.mw">info@jbfschools.mw</a><span>Chimwankhunda, Blantyre, Malawi</span></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="currentYear"></span> Joyce Banda Foundation Schools</span><span>Learning • Growth • Opportunity</span></div>
+</footer>
+<script src="navigation.js"></script>
+</body>
+</html>

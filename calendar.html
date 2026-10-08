@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="School calendar and important dates for Joyce Banda Foundation Schools in Blantyre, Malawi.">
+  <title>School Calendar | Joyce Banda Foundation Schools</title>
+  <link rel="stylesheet" href="calendar.css">
+  <script src="calendar.js" defer></script>
+  <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+ <!-- ================= NAVIGATION ================= -->
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <div class="navigation-container">
+
+                <a href="index.html" class="school-brand"
+                   aria-label="Joyce Banda Foundation Schools home">
+
+                    <span class="brand-symbol" aria-hidden="true">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 43V19" stroke="currentColor"
+                                  stroke-width="2.5"/>
+                            <path d="M24 19C14 19 9 12 9 5C19 5 24 11 24 19Z"
+                                  fill="#C69A35"/>
+                            <path d="M24 25C34 25 39 18 39 11C29 11 24 17 24 25Z"
+                                  fill="#C69A35"/>
+                            <path d="M5 21L24 29L43 21V40L24 47L5 40V21Z"
+                                  fill="#064B3B"/>
+                            <path d="M24 29V45" stroke="#FAF8F1"
+                                  stroke-width="1.5"/>
+                            <path d="M9 25L22 31V41L9 36V25Z"
+                                  fill="#FFFFFF"/>
+                            <path d="M39 25L26 31V41L39 36V25Z"
+                                  fill="#E4F0E7"/>
+                        </svg>
+                    </span>
+
+                    <span class="brand-text">
+                        <strong>JOYCE BANDA</strong>
+                        <small>FOUNDATION SCHOOLS</small>
+                    </span>
+
+                </a>
+
+
+                <button class="menu-toggle"
+                        id="menuToggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="navLinks">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+                <div class="nav-links" id="navLinks">
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="student-life.html">Student Life</a>
+                    <a href="news.html">News &amp; Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">PLAN AHEAD</p>
+      <h1>Our school <span>calendar.</span></h1>
+      <p>Keep track of school activities, learning milestones, family meetings, and important reminders throughout the school year.</p>
+      <a class="button button-gold" href="#calendar-tools">Explore calendar <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="art-circle circle-one"></div><div class="art-circle circle-two"></div>
+      <div class="calendar-illustration">
+        <div class="calendar-top"><span></span><span></span><span></span><span></span></div>
+        <div class="calendar-month">SCHOOL YEAR</div>
+        <div class="calendar-grid">
+          <i>M</i><i>T</i><i>W</i><i>T</i><i>F</i><i>S</i><i>S</i>
+          <b></b><b></b><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b>
+          <b>6</b><b>7</b><b class="marked">8</b><b>9</b><b>10</b><b>11</b><b>12</b>
+          <b>13</b><b>14</b><b>15</b><b class="marked">16</b><b>17</b><b>18</b><b>19</b>
+        </div>
+      </div>
+      <span class="floating-dot dot-one"></span><span class="floating-dot dot-two"></span>
+    </div>
+  </section>
+
+  <section class="notice section-wrap">
+    <span class="notice-icon">!</span>
+    <div><strong>Please note</strong><p>This page is a calendar template. Dates and activities below are examples for planning only, not confirmed school dates. Please check with the school office for the official term dates and event schedule.</p></div>
+  </section>
+
+  <section class="calendar-section section-wrap" id="calendar-tools">
+    <div class="section-heading">
+      <div><p class="eyebrow">IMPORTANT DATES</p><h2>Stay in the <span>know.</span></h2></div>
+      <p>Use the month selector and category filter to explore the sample calendar.</p>
+    </div>
+    <div class="calendar-toolbar">
+      <div class="month-controls">
+        <button class="arrow-button" id="prevMonth" aria-label="Previous month">←</button>
+        <h3 id="monthTitle" aria-live="polite">Month Year</h3>
+        <button class="arrow-button" id="nextMonth" aria-label="Next month">→</button>
+      </div>
+      <label class="filter-label">Show
+        <select id="categoryFilter">
+          <option value="all">All activities</option>
+          <option value="academic">Academic</option>
+          <option value="community">Community</option>
+          <option value="family">Family meetings</option>
+          <option value="reminder">Reminders</option>
+        </select>
+      </label>
+    </div>
+    <div class="calendar-layout">
+      <div class="calendar-panel">
+        <div class="weekdays"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+        <div class="calendar-days" id="calendarDays" aria-label="Calendar dates"></div>
+        <div class="legend">
+          <span><i class="legend-dot academic"></i>Academic</span>
+          <span><i class="legend-dot community"></i>Community</span>
+          <span><i class="legend-dot family"></i>Family meetings</span>
+          <span><i class="legend-dot reminder"></i>Reminders</span>
+        </div>
+      </div>
+      <aside class="upcoming-panel">
+        <p class="eyebrow">CALENDAR HIGHLIGHTS</p>
+        <h3 id="eventsTitle">Activities this month</h3>
+        <p class="panel-intro">Select a date with a marker to view its activity.</p>
+        <div id="eventList" class="event-list"></div>
+        <div class="selected-event" id="selectedEvent" aria-live="polite">
+          <span class="selected-icon">✦</span><div><strong>Select a date</strong><p>Activity details will appear here.</p></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="reminders-section">
+    <div class="section-wrap">
+      <div class="section-heading light-heading">
+        <div><p class="eyebrow">A FEW HELPFUL REMINDERS</p><h2>Ready for a <span>great term?</span></h2></div>
+        <p>Simple ways families can help learners prepare for school activities.</p>
+      </div>
+      <div class="reminder-grid">
+        <article class="reminder-card"><span>01</span><h3>Check school notices</h3><p>Look out for official messages from the school about dates, uniform, supplies, and schedule changes.</p></article>
+        <article class="reminder-card"><span>02</span><h3>Prepare in advance</h3><p>Help learners arrive ready for assessments, trips, performances, and other scheduled activities.</p></article>
+        <article class="reminder-card"><span>03</span><h3>Stay connected</h3><p>Contact the school office if a date is unclear or you need to confirm an event before making plans.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="calendar-cta">
+    <div><p class="eyebrow">NEED TO CONFIRM A DATE?</p><h2>We're happy to help.</h2><p>Contact the school office for the latest official calendar and term information.</p></div>
+    <a class="button button-light" href="contact.html">Contact the school <span aria-hidden="true">→</span></a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-copy"><strong>JOYCE BANDA</strong><small>FOUNDATION SCHOOLS</small></span></a>
+    <p>Supporting learners as they learn, grow, and prepare for the future.</p>
+    <div class="footer-contact"><a href="tel:+265993876439">+265 993 876 439</a><a href="mailto:info@jbfschools.mw">info@jbfschools.mw</a><span>Chimwankhunda, Blantyre, Malawi</span></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="currentYear"></span> Joyce Banda Foundation Schools</span><span>Learning • Growth • Opportunity</span></div>
+</footer>
+<script src="navigation.js"></script>
+</body>
+</html>
