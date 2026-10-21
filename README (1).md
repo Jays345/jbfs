@@ -2,15 +2,15 @@
 
 A trial website for JBF Schools, designed to present school information, academics, admissions, student life, news, events, and other important resources through a user-friendly web interface.
 
-## 🌐 Live Demo
+## Live Demo
 
 Visit the website: [JBF Schools Website](https://jbfs-phi.vercel.app/)
 
-## 📌 Project Overview
+## Project Overview
 
 The JBF Schools Website is a front-end web development project created to provide a central online platform for school-related information. It organizes key information into dedicated pages, making it easier for students, parents, and visitors to explore the school and its activities.
 
-## ✨ Features
+## Features
 
 - **Home Page** — Introduces the school and provides access to key sections.
 - **About Us** — Presents information about the school.
@@ -24,7 +24,7 @@ The JBF Schools Website is a front-end web development project created to provid
 - **Reusable Navigation** — Separate navigation files support the site's navigation structure.
 - **Responsive Design** — CSS styling supports layout customization across screen sizes.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5** — Page structure and content.
 - **CSS3** — Styling, layouts, and visual presentation.
@@ -32,7 +32,7 @@ The JBF Schools Website is a front-end web development project created to provid
 - **Vercel** — Website deployment and hosting.
 - **Git & GitHub** — Version control and source code management.
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 jbfs/
@@ -71,7 +71,7 @@ jbfs/
 └── README.md
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -95,7 +95,7 @@ You need a modern web browser and Git installed on your computer.
 
 No package installation is required for the basic static website.
 
-## 💻 Local Development
+##  Local Development
 
 You can edit the HTML, CSS, and JavaScript files using a code editor such as Visual Studio Code.
 
@@ -104,20 +104,15 @@ You can edit the HTML, CSS, and JavaScript files using a code editor such as Vis
 - Modify client-side interactions in the `.js` files.
 - Store website images and other visual assets in the `images/` directory.
 
-## 🌍 Deployment
 
-The website is deployed on Vercel.
-
-To publish updates, push your changes to the connected GitHub repository and allow Vercel to rebuild the site, if automatic deployments are configured.
-
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Develop a structured website for a school.
 - Improve the accessibility and organization of school information.
 - Apply practical HTML, CSS, and JavaScript development skills.
 - Gain experience with GitHub version control and web deployment.
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Add a content management system for school administrators.
 - Integrate online admission forms.
@@ -125,7 +120,7 @@ To publish updates, push your changes to the connected GitHub repository and all
 - Improve accessibility and responsive behavior.
 - Integrate secure contact forms and database-backed functionality where required.
 
-## 👨‍💻 Author
+##  Author
 
 **Simeon Ethan Mphande**
 
