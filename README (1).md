@@ -126,6 +126,6 @@ You can edit the HTML, CSS, and JavaScript files using a code editor such as Vis
 
 GitHub: [@Jays345](https://github.com/Jays345)
 
-## 📄 License
+##  License
 
 See the repository's `LICENSE` file for licensing terms.
